@@ -246,7 +246,7 @@ length(unique(county_zip$zipcode)) # 39313
 #-----------------------------------------------------------------------------------
 # Save the resulting data to an Excel file 
 #-----------------------------------------------------------------------------------
-output_directory <- input_directory <- "/Users/ddas83/Dropbox (GaTech)/DD_Research/county_zip_crosswalk/output" # !! Change it to your working directory !!
+output_directory <- "/Users/ddas83/Dropbox (GaTech)/DD_Research/county_zip_crosswalk/output" # !! Change it to your working directory !!
 excel_file_name <- "county_zip_crosswalk.xlsx"
 excel_file_path <- file.path(output_directory, excel_file_name)
 write_xlsx(county_zip, excel_file_path)
