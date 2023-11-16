@@ -4,7 +4,6 @@
 # Date Written: 11/11/2023
 # Last Updated: 11/16/2023
 #-----------------------------------------------------------------------------------
-#
 # This script: 
 #   - Creates zip-county crosswalk data using HUD-USPS data and Census Data.
 #   - Produces a crosswalk between zip codes, counties (both FIPS codes and county names),
