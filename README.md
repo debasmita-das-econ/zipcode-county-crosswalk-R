@@ -1,4 +1,4 @@
-# Zipcode County Crosswalk
+# Zip Code County Crosswalk
 
 - https://github.com/jagman88/Crosswalk-ZipCode-County-CBSA
 - https://www.nber.org/research/data/ssa-federal-information-processing-series-fips-core-based-statistical-area-cbsa-and-metropolitan-and
