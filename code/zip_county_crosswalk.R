@@ -229,19 +229,25 @@ county_zip <- county_zip %>%
 # rename variables
 county_zip <- county_zip %>% 
   rename(CountyFIPS_5 = COUNTY,
-         zipcode = ZIP,
-         CountyName = Name)
+         zipcode = ZIP)
+
+# Check how many zipcodes with 0 RES_RATIO
+county_zip %>% filter(RES_RATIO == 0) # 3,993  zipcodes
+
+length(unique(county_zip$zipcode)) # 39313
+length(unique(county_zip$StateAbbr)) # 51
+length(unique(county_zip$CountyFIPS_5)) # 3141
+length(unique(county_zip$Name)) #  1876: Counties in different states can have the same name.
+
+county_zip$CountyName <- ifelse(is.na(county_zip$Name), NA, 
+                                           paste(county_zip$Name, county_zip$StateAbbr, sep = ", "))
+length(unique(county_zip$CountyName)) # 3141
 
 # reorder
 county_zip <- county_zip %>% 
   dplyr::select(zipcode, CountyFIPS_5, CountyName, StateAbbr, 
                 StateFIPSCode, CountyFIPSCode, RES_RATIO, max_tot_ratio)
 glimpse(county_zip)
-
-# Check how many zipcodes with 0 RES_RATIO
-county_zip %>% filter(RES_RATIO == 0) # 3,993  zipcodes
-
-length(unique(county_zip$zipcode)) # 39313
 
 #-----------------------------------------------------------------------------------
 # Save the resulting data to an Excel file 
