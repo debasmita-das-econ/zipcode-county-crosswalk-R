@@ -1,4 +1,4 @@
-# Zip Code County Crosswalk using HUD-USPS Data and Census Data - R
+# Zip Code County Crosswalk using R
 
 ## Data 
 
