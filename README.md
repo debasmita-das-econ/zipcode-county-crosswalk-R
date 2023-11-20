@@ -3,7 +3,7 @@
 ## Data 
 
 ## Required Packages
-
+`dplyr`, `tidyverse`, `readxl`, `writexl`
 
 ## Author
 Debasmita Das (Georgia Tech, 2023)
