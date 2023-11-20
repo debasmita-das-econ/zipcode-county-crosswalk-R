@@ -24,14 +24,14 @@ ZIP Code Crosswalk Files,”](https://www.huduser.gov/portal/periodicals/cityscp
 Excel File: ["county_zip_crosswalk.xlsx"](https://github.com/debasmita-das-econ/zipcode-county-crosswalk-R/blob/main/output/county_zip_crosswalk.xlsx)
 
 Variables:
-   - zipcode               <chr> 5 digit zip code number
-   - CountyFIPS_5          <chr> 5 digit FIPS code (2 digit state code + 3 digit county code)
-   - CountyName            <chr> County names from the Census
-   - StateAbbr             <chr> Two-letter Postal State abbreviation
-   - StateFIPSCode         <chr> 2 digit FIPS State code
-   - CountyFIPSCode        <chr> 3 digit FIPS County code
-   - max_tot_ratio         <dbl> Largest Total Address Ratio corresponding to that ZIP Code
-   - RES_RATIO             <dbl> proportion of residential addresses in that ZIP Code
+   - `zipcode`:               <chr> 5 digit zip code number
+   - `CountyFIPS_5`:          <chr> 5 digit FIPS code (2 digit state code + 3 digit county code)
+   - `CountyName`:            <chr> County names from the Census
+   - `StateAbbr`:             <chr> Two-letter Postal State abbreviation
+   - `StateFIPSCode`:         <chr> 2 digit FIPS State code
+   - `CountyFIPSCode`:        <chr> 3 digit FIPS County code
+   - `max_tot_ratio`:         <dbl> Largest Total Address Ratio corresponding to that ZIP Code
+   - `RES_RATIO`:            <dbl> proportion of residential addresses in that ZIP Code
 
 ## Author
 Debasmita Das (Georgia Tech, 2023)
