@@ -1,7 +1,7 @@
 # Zip Code County Crosswalk using R
 
 
-The script [`zip_county_crosswalk.R`](https://github.com/debasmita-das-econ/zipcode-county-crosswalk-R/blob/main/code/zip_county_crosswalk.R) creates zip-county crosswalk data using HUD-USPS data and Census Data. I only kept the states in the Mainland US, and excluded the US Territories (as required in my research project).
+The script [`code/zip_county_crosswalk.R`](https://github.com/debasmita-das-econ/zipcode-county-crosswalk-R/blob/main/code/zip_county_crosswalk.R) creates zip-county crosswalk data using HUD-USPS data and Census Data. I only kept the states in the Mainland US, and excluded the US Territories (as required in my research project).
 
 ## Data 
 
@@ -21,7 +21,7 @@ ZIP Code Crosswalk Files,”](https://www.huduser.gov/portal/periodicals/cityscp
 `dplyr`, `tidyverse`, `readxl`, `writexl`
 
 ## Output
-Excel File: ["county_zip_crosswalk.xlsx"](https://github.com/debasmita-das-econ/zipcode-county-crosswalk-R/blob/main/output/county_zip_crosswalk.xlsx)
+Excel File: [`output/county_zip_crosswalk.xlsx`](https://github.com/debasmita-das-econ/zipcode-county-crosswalk-R/blob/main/output/county_zip_crosswalk.xlsx)
 
 Variables:
    - `zipcode`:               <chr> 5 digit zip code number
